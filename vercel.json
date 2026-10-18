@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "crons": [
+    {
+      "path": "/api/cron/refresh-tokens",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/reset-usage",
+      "schedule": "0 0 1 * *"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

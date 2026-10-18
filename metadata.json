@@ -1,0 +1,6 @@
+{
+  "name": "ReelBolt",
+  "description": "Instagram Comment-to-DM automation SaaS. Automatically turn post and Reel comments into instant DMs and leads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
